@@ -1,0 +1,152 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1504\cocoasubrtf830
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\fnil\fcharset0 HelveticaNeue;\f2\fnil\fcharset0 Menlo-Regular;
+}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue0;\red255\green255\blue255;}
+{\*\expandedcolortbl;;\csgenericrgb\c0\c0\c0;\csgray\c100000;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww19900\viewh9960\viewkind0
+\pard\tx-100\tx-100\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5455\tx5669\tx5823\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf2 \
+\
+
+\b\fs32 DavisBase\
+\
+
+\b0\fs26 Name: Saumya Saroop Upadhyay\
+Email: sxu171430@utdallas.edu\
+NetId: sxu171430\
+\
+
+\i BUILD AND RUN STEPS:\
+\
+
+\i0 Kindly follow the following steps to build the project on Windows or Mac:\
+1. Unzip the folder and in the src folder open the command prompt or Terminal window\
+2. Run the command: 
+\b javac DavisBasePrompt.java\
+
+\b0 This will create an executable DavisBasePrompt.class file.\
+3. Now to run the project use the command: 
+\b java DavisBasePrompt\
+\
+
+\i\b0 LIST OF SUPPORTED COMMANDS:
+\i0 \
+\
+\pard\tx543\pardeftab543\pardirnatural\partightenfactor0
+
+\f1 \cf2 \cb3 All commands below are case insensitive\
+\
+\
+\pard\tx543\pardeftab543\pardirnatural\partightenfactor0
+
+\f2\fs24 \cf2 \cb3 -	USE DATABASE database_name;                      Changes current database.
+\f0 \
+\pard\tx543\pardeftab543\pardirnatural\partightenfactor0
+
+\f1\fs26 \cf2 \cb3 -	
+\f2\fs24 \cf2 \cb3 CREATE DATABASE database_name;                   Creates an empty database.
+\f0 \
+
+\f1\fs26 \cf2 \cb3 -	
+\f2\fs24 \cf2 \cb3 SHOW DATABASES;                                  Displays all databases.
+\f0 \
+
+\f1\fs26 \cf2 \cb3 -	
+\f2\fs24 \cf2 \cb3 DROP DATABASE database_name;                     Deletes a database.
+\f0 \
+
+\f1\fs26 \cf2 \cb3 -	
+\f2\fs24 \cf2 \cb3 SHOW TABLES;                                     Displays all tables in current database.
+\f0 \
+
+\f1\fs26 \cf2 \cb3 -	
+\f2\fs24 \cf2 \cb3 DESC table_name;                                 Displays table schema.
+\f0 \
+
+\f1\fs26 \cf2 \cb3 -	
+\f2\fs24 \cf2 \cb3 CREATE TABLE table_name (                        Creates a table in current database.
+\f0 \
+
+\f1\fs26 \cf2 \cb3 	
+\f2\fs24 \cf2 \cb3 	<column_name> <datatype> [PRIMARY KEY | NOT NULL]
+\f0 \
+
+\f1\fs26 \cf2 \cb3 	
+\f2\fs24 \cf2 \cb3 	...);
+\f0 \
+
+\f1\fs26 \cf2 \cb3 -	
+\f2\fs24 \cf2 \cb3 DROP TABLE table_name;                           Deletes a table data and its schema.
+\f0 \
+
+\f1\fs26 \cf2 \cb3 -	
+\f2\fs24 \cf2 \cb3 SELECT <column_list> FROM table_name             Display records whose rowid is <id>.
+\f0 \
+
+\f1\fs26 \cf2 \cb3 	
+\f2\fs24 \cf2 \cb3 	[WHERE rowid = <value>];
+\f0 \
+
+\f1\fs26 \cf2 \cb3 -	
+\f2\fs24 \cf2 \cb3 INSERT INTO table_name                           Inserts a record into the table.
+\f0 \
+
+\f1\fs26 \cf2 \cb3 	
+\f2\fs24 \cf2 \cb3 	[(<column1>, ...)] VALUES (<value1>, <value2>, ...);
+\f0 \
+
+\f1\fs26 \cf2 \cb3 -	
+\f2\fs24 \cf2 \cb3 DELETE FROM table_name [WHERE condition];        Deletes a record from a table.
+\f0 \
+
+\f1\fs26 \cf2 \cb3 -	
+\f2\fs24 \cf2 \cb3 UPDATE table_name SET <conditions>               Updates a record from a table.
+\f0 \
+
+\f1\fs26 \cf2 \cb3 	
+\f2\fs24 \cf2 \cb3 	[WHERE condition];
+\f0 \
+
+\f1\fs26 \cf2 \cb3 -	
+\f2\fs24 \cf2 \cb3 VERSION;                                         Display current database engine version.
+\f0 \
+
+\f1\fs26 \cf2 \cb3 -	
+\f2\fs24 \cf2 \cb3 HELP;                                            Displays help information
+\f0 \
+
+\f1\fs26 \cf2 \cb3 -	
+\f2\fs24 \cf2 \cb3 EXIT;                                            Exits the program\
+\
+Following are the sample commands that were tested successfully:\
+\
+- show databases;\
+- use student;\
+- show tables;\
+- create database student;\
+- create table stu_details(
+\f1\fs26 \cf2 \cb3 ssn INT PRIMARY KEY, firstName TEXT NOT NULL, lastName TEXT, address TEXT, DOB DATE NOT NULL, i INT)
+\f2\fs24 \cf2 \cb3 \
+- insert into stu_details values(123456789, \'91Abcjehvdhj\'92, \'91Defsjhvlsajh\'92, \'917575 Frankford Road\'92, \'91
+\f1\fs26 \cf2 \cb3 1989-11-12\'92
+\f2\fs24 \cf2 \cb3 , 500);\
+- 
+\f1\fs26 \cf2 \cb3 update stu_details set i=1000 where ssn=123456789;
+\f2\fs24 \cf2 \cb3 \
+- 
+\f1\fs26 \cf2 \cb3 delete from stu_details;
+\f2\fs24 \cf2 \cb3 \
+- 
+\f1\fs26 \cf2 \cb3 drop table stu_details;
+\f2\fs24 \cf2 \cb3 \
+- 
+\f1\fs26 \cf2 \cb3 drop database sample;
+\f2\fs24 \cf2 \cb3 \
+- drop database student; \
+- exit;\
+
+\f1\fs26 \cf2 \cb3 \
+\
+\
+}
